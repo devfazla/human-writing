@@ -1,0 +1,26 @@
+{
+  "skill_name": "human-writing",
+  "evals": [
+    {
+      "id": 1,
+      "eval_name": "landlord-email-given-facts",
+      "prompt": "Write an email to my landlord. The heater in unit 4B has been out since Oct 28. I texted him on the 29th and the 31st and got no reply. It's been in the low 50s inside. I want it fixed this week and I'd like to know who else I can call if he doesn't answer.",
+      "expected_output": "Short, direct email using only the supplied facts. No invented details, threats, or deadlines. No stock phrases, no closing pleasantries stack, no em dash habit.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "eval_name": "rewrite-pasted-ai-copy",
+      "prompt": "This sounds like a robot wrote it. Make it sound like a real person at the practice wrote it: \"At Brightline Dental, we are committed to providing a comprehensive range of high-quality dental services in a warm and welcoming environment. Our team of three experienced dentists leverages cutting-edge technology to ensure that every patient receives personalized care tailored to their unique needs. Whether you require a routine cleaning or a complex restorative procedure, we offer seamless same-day crowns and are in-network with Delta Dental and Cigna. We are open Monday through Saturday, making it easy to fit exceptional dental care into your busy schedule. Contact us today to embark on your journey to a healthier smile!\"",
+      "expected_output": "Rebuilt from the claims (3 dentists, cleanings to restorative work, same-day crowns, Delta Dental and Cigna, Mon-Sat, contact), much shorter, no new facts added, no filler. Not a sentence-by-sentence paraphrase.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "eval_name": "blog-post-thin-material",
+      "prompt": "Write a ~300 word blog post about why I quit my to-do app. I used Todoist for 4 years and switched to a paper notebook in March. Main reason: I was spending more time sorting tasks than doing them.",
+      "expected_output": "Uses only the supplied facts, takes the user's position, does not invent anecdotes, quotes, or statistics. May run shorter than 300 words and says in one line what real detail would help. Prose, no headers or bullets, no summary closer.",
+      "files": []
+    }
+  ]
+}
